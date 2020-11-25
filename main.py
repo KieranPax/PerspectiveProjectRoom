@@ -143,10 +143,8 @@ class App:
 
 def main():
     app = App()
-    # antialiasing
-    config = pyglet.gl.Config(sample_buffers=1, samples=2)
     # create window
-    window = pyglet.window.Window(app.width, app.height, 'Perpective', config=config)
+    window = pyglet.window.Window(app.width, app.height, 'Perpective')
     window.set_exclusive_mouse(True)
 
     # store store of key values
